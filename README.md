@@ -15,8 +15,9 @@ Express server for web3-js interaction with UniswapV2 exchange contract.
 - Infura node key
 
 
-## Installation
 
+## Ethereum Account Configuration
+### .env 
 ```console
 RPC_URL="https://ropsten.infura.io/v3/<PROJECT_ID>"
 
@@ -25,11 +26,10 @@ ACCOUNT="<0x00...>"
 PRIVATE_KEY="7<account private key>"
 POLLING_INTERVAL=≤price check interval>
 ```
-## Ethereum account configuration
-### .env 
+
+## Run
 ```console
 yarn run start
 ```
-
 
 
