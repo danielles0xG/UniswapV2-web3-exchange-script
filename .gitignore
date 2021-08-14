@@ -7,3 +7,5 @@ logs/*
 logs
 examples/*
 examples
+
+package-lock.json
