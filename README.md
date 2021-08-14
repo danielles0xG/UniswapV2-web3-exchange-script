@@ -1,4 +1,4 @@
-## Simple ETH/DAI Stoploss script to Uniswap exchange
+## Simple ETH/DAI stoploss script to Uniswap exchange
 
 Express server for web3-js interaction with UniswapV2 exchange contract.
 
