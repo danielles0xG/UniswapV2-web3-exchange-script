@@ -20,6 +20,7 @@ The script will check prices and sell your ETH when the price goes beyond the su
     - RPC INFURA URL
     - ETHREUM ACCOUNT
     - ACCOUNT PRV KEY
+    - ETH_SELL_PRICE
 
 ## Run
 ```console

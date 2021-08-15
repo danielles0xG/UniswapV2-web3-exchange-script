@@ -43,7 +43,7 @@ try {
 const ETH_AMOUNT = web3.utils.toWei('1', 'Ether');
 cLog('ETH_AMOUNT', ETH_AMOUNT);
 
-const ETH_SELL_PRICE = web3.utils.toWei('400', 'Ether'); // 200 Dai a.k.a. $200 USD
+const ETH_SELL_PRICE = web3.utils.toWei(`${process.env.ETH_SELL_PRICE}`, 'Ether'); // 200 Dai a.k.a. $200 USD
 cLog('ETH_SELL_PRICE', ETH_SELL_PRICE);
 
 
