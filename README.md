@@ -1,4 +1,4 @@
-## Simple ETH/DAI stoploss script to Uniswap exchange
+## Simple ETH/DAI stoploss script with Uniswap exchange
 
 The script will check prices and sell your ETH when the price goes beyond the support prise you define. This is an express server doing web3-js interaction with UniswapV2 exchange contract.
 ## Install
