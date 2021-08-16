@@ -1,5 +1,4 @@
-/** @format */
-
+'use strict';
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -43,13 +42,15 @@ try {
 const ETH_AMOUNT = web3.utils.toWei('1', 'Ether');
 cLog('ETH_AMOUNT', ETH_AMOUNT);
 
-const ETH_SELL_PRICE = web3.utils.toWei(`${process.env.ETH_SELL_PRICE}`, 'Ether'); // 200 Dai a.k.a. $200 USD
+const ETH_SELL_PRICE = web3.utils.toWei(
+    `${process.env.ETH_SELL_PRICE}`,
+    'Ether'
+); // 200 Dai a.k.a. $200 USD
 cLog('ETH_SELL_PRICE', ETH_SELL_PRICE);
 
-
- /**
+/**
  * Uniswap uses one exchange (contract) for crypto pair.
- * 
+ *
  * @param {uint} ethAmount - Ether Amount to swap.
  * @param {uint} daiAmount - Dai Amount to get.
  */
@@ -85,10 +86,9 @@ async function checkBalances() {
     // Check Ether balance swap
     try {
         // balance = await web3.eth.getBalance(process.env.ACCOUNT)
-         let balance = await web3.eth
-            .getBalance(process.env.ACCOUNT);
+        let balance = await web3.eth.getBalance(process.env.ACCOUNT);
 
-          balance = web3.utils.fromWei(balance, 'Ether');
+        balance = web3.utils.fromWei(balance, 'Ether');
         console.log('Ether Balance:', balance);
 
         // Check Dai balance swap
@@ -156,8 +156,6 @@ async function monitorPrice() {
 const POLLING_INTERVAL = process.env.POLLING_INTERVAL || 1000; // 1 Second
 
 priceMonitor = setInterval(async() => {
-
     await checkBalances();
     await monitorPrice();
-
 }, POLLING_INTERVAL);
