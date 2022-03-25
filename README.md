@@ -1,6 +1,6 @@
 ## Simple ETH/DAI stoploss script with Uniswap exchange
 
-The script will check prices and sell your ETH when the price goes beyond the support prise you define. This is an express server doing web3-js interaction with UniswapV2 exchange contract.
+The script will check prices and sell your ETH when the price goes beyond the support price you define. This is an express server doing web3-js interaction with UniswapV2 exchange contract.
 ## Install
 
 - Configure eth account to connect to Metamask wallet
